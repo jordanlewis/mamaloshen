@@ -1,7 +1,10 @@
 <html>
 <head>
 <title>Vocab Grab</title>
+
 <style type="text/css">
+
+body { font-family: Sans-serif;}
 #tooltip {
 width: 250px;
 height: auto;
@@ -25,9 +28,17 @@ color: #333;
 }
 
 </style>
+<link type="text/css" rel="stylesheet" href="jquery.qtip.min.css" />
+
 </head>
 <body>
-
+<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="jquery.qtip-2.0.0.min.js"></script>
+<Script type="text/javascript">
+$('a[title]').qtip()
+</Script>
+The Saint Patrick's Day <a href="#" title="definition here!">parade</a> was cancelled this year due to a deluge of snakes.
+<br /><br /><br />
 <div id="tooltip">
 <span class="word">word</span>&nbsp;<span class="part-of-speech">nm.</span><br />
 <span class="definition">A single distinct meaningful element of speech or writing.</span>
